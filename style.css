@@ -4,7 +4,8 @@
     box-sizing: border-box;
     overflow-x: hidden;
 }
-.container{
+
+.container {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -12,36 +13,43 @@
     font-family: Tahoma, sans-serif;
     background-image: url('https://static.vecteezy.com/system/resources/previews/000/258/943/original/modern-dark-texture-background-vector.jpg');
 }
-.h_left_side, .h_right_side{
+
+.h_left_side,
+.h_right_side {
     width: 50%;
-    padding: 0 2.5rem;
+    padding: 0 3rem;
 }
-.h_left_side>:nth-child(1){
-    color: #6C63FF;
+
+.h_left_side>:nth-child(1) {
+    color: #08A842;
     font-size: 4rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
-.h_left_side>:nth-child(2){
+
+.h_left_side>:nth-child(2) {
     display: block;
     font-size: 1.5rem;
-    color: goldenrod;
+    color: #FDCC01;
     margin-bottom: 2rem;
 }
-.h_left_side>:nth-child(3){
+
+.h_left_side>:nth-child(3) {
     font-size: 1rem;
     color: rgb(133, 132, 132);
     text-align: justify;
 }
-.h_right_side> img{
+
+.h_right_side>img {
     width: 100%;
 }
-a{
+
+a {
     width: 13rem;
     display: block;
     text-decoration: none;
     margin-top: 2rem;
     padding: 20px 50px;
-    background: #6C63FF;
+    background: #08A842;
     color: white;
     font-weight: bold;
     border: none;
@@ -51,14 +59,15 @@ a{
 
 /* editor page style */
 
-label{
-    color: wheat;
-    font-size: 20px;
+label {
+    color: #FDCC01;
+    font-size: 25px;
 }
+
 .editor_container {
     height: 100%;
     width: 100%;
-    
+
     background-image: url('images/darkBG.jpg');
     background-size: cover;
     background-position: center;
@@ -72,32 +81,62 @@ label{
     align-items: center;
 }
 
-.left_side, .right_side{
+.left_side,
+.right_side {
     width: 50%;
     padding: 2rem;
 }
-.left_side >* textarea{
+
+.left_side>* textarea {
     width: 100%;
     height: 12rem;
     padding: 1rem;
     margin: 0.5rem 0rem;
-    border: none;
+    border: 1px solid wheat;
     outline: none;
+    background: rgb(231, 225, 225);
+    color: #08A842;
+    font-size: 18px;
 }
-iframe{
+
+iframe {
     width: 100%;
     height: 27rem;
     padding: 1rem;
-    background: rgb(235, 207, 207);
+    background: rgb(235, 215, 215);
 }
 
-@media only screen and (max-width: 600px) {
-    .overlay {
-      flex-direction: column;
-      height: auto;
+@media only screen and (max-width: 576px) {
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
-    .left_side, .right_side{
+
+    .h_left_side,
+    .h_right_side {
+        width: 100%;
+        padding: 0 2.5rem;
+    }
+
+    .h_left_side>:nth-child(1) {
+        font-size: 2.5rem;
+    }
+    
+    .h_left_side>:nth-child(2) {
+        font-size: 1rem;
+    }
+
+    .overlay {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .left_side,
+    .right_side {
         width: 100%;
         padding: 2rem;
     }
-  }
+}
