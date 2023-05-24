@@ -2,31 +2,54 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 .container{
     height: 100vh;
     width: 100%;
-    background: black;
     display: flex;
     align-items: center;
+    font-family: Tahoma, sans-serif;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/000/258/943/original/modern-dark-texture-background-vector.jpg');
 }
-.h_left_side{
+.h_left_side, .h_right_side{
     width: 50%;
+    padding: 0 2.5rem;
+}
+.h_left_side>:nth-child(1){
+    color: #6C63FF;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+.h_left_side>:nth-child(2){
+    display: block;
+    font-size: 1.5rem;
+    color: goldenrod;
+    margin-bottom: 2rem;
+}
+.h_left_side>:nth-child(3){
+    font-size: 1rem;
+    color: rgb(133, 132, 132);
+    text-align: justify;
+}
+.h_right_side> img{
+    width: 100%;
+}
+a{
+    width: 13rem;
+    display: block;
+    text-decoration: none;
+    margin-top: 2rem;
+    padding: 20px 50px;
+    background: #6C63FF;
     color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
 }
-.h_right_side{
-    width: 50%;
-}
 
-
-
-
-
-
-
-
-
-
+/* editor page style */
 
 label{
     color: wheat;
@@ -36,16 +59,17 @@ label{
     height: 100%;
     width: 100%;
     
-    background-image: url('images/4102879_971.jpg');
+    background-image: url('images/darkBG.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .overlay {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.8);
     display: flex;
+    align-items: center;
 }
 
 .left_side, .right_side{
@@ -54,24 +78,23 @@ label{
 }
 .left_side >* textarea{
     width: 100%;
-    padding: 1rem;
     height: 12rem;
+    padding: 1rem;
     margin: 0.5rem 0rem;
     border: none;
     outline: none;
 }
 iframe{
     width: 100%;
-    height: 42rem;
+    height: 27rem;
     padding: 1rem;
     background: rgb(235, 207, 207);
-    /* border: none;
-    outline: none; */
 }
 
 @media only screen and (max-width: 600px) {
     .overlay {
       flex-direction: column;
+      height: auto;
     }
     .left_side, .right_side{
         width: 100%;
