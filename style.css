@@ -24,6 +24,8 @@
     color: #08A842;
     font-size: 4rem;
     margin: 1rem 0;
+    animation-name: greenColorHighlighter;
+    animation-duration: 3s;
 }
 
 .h_left_side>:nth-child(2) {
@@ -55,6 +57,9 @@ a {
     border: none;
     border-radius: 30px;
     cursor: pointer;
+
+    animation-name: buttonBackground;
+    animation-duration: 3s;
 }
 
 /* editor page style */
@@ -105,6 +110,17 @@ iframe {
     padding: 1rem;
     background: rgb(235, 215, 215);
 }
+
+@keyframes greenColorHighlighter{
+    from{color: #FDCC01;}
+    to{color: #08A842;}
+}
+@keyframes buttonBackground{
+    from{background: #FDCC01;}
+    to{background: #08A842;}
+}
+
+
 
 @media only screen and (max-width: 576px) {
     .container {
